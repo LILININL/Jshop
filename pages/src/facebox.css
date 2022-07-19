@@ -1,0 +1,112 @@
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(255, 255, 255, 0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow:0 0 18px rgba(255, 255, 255, 0.4);
+  box-shadow:0 0 18px rgba(255, 255, 255, 0.4);
+}
+
+#facebox .content {
+  display:table;
+  width: 280px;
+  padding: 10px;
+  background: #000000;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:2px;
+  right:2px;
+  padding:2px;
+  background:#000000;
+}
+#facebox .close img{
+  opacity:5;
+}
+#facebox .close:hover img{
+  opacity:5;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000000;
+  z-index: 99;
+}
+
+.hoverbox
+{
+	cursor: default;
+	list-style: none;
+}
+
+.hoverbox a
+{
+	cursor:pointer;
+}
+
+
+.hoverbox img
+{
+	background: #000000;
+	border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFFFFF;
+	padding: 2px;
+	vertical-align: top;
+	width: 115px;
+	height: 70px;
+	margin-bottom:5px;
+}

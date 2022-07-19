@@ -1,0 +1,24 @@
+<?php
+session_start();
+include('connect.php');
+$a = $_POST['typesl'];
+
+$sql = "SELECT typeproduct FROM producttype WHERE typeproduct='$a'";
+    $sql = $db->prepare($sql);
+    $sql->execute();
+    $count = $sql->rowCount();
+        if ($count == 1) {
+             echo "<script>";
+			 echo "alert('ไม่สามารถบันทึกข้อมูลได้ มีข้อมูลประเภทสินค้านี้อยู่ในระบบแล้ว !!!');";
+			 echo "window.location='typeproduct.php';";
+          	 echo "</script>";
+        } else { 
+            $sql = "INSERT INTO producttype (typeproduct) VALUES (?)";
+            $q = $db->prepare($sql);
+            $q->execute(array($a));
+            echo "alert('บันทึกข้อมูลเรียบร้อย !');";
+			echo "window.location='typeproduct.php';";
+          	echo "</script>";    
+        }
+
+?>

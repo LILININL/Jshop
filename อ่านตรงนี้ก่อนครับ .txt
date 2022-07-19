@@ -1,0 +1,23 @@
+
+แก้ข้อมูลไฟล์เชื่อมต่อ sql ใน โฟล์เดอร์ pages
+แ
+ก้ไฟล์ชื่อ
+Jshop\pages\connect.php
+แก้บรรทัดที่ 3, 4, 5    แก้ host , user , pass  ให้เป็น  host , user , pass ของฐานข้อมูลใหม่ไปใส่  //แก้ตรงในดอกจันทร์ ลบดอกจันทร์ออกด้วยหลังแก้ครับ 
+$db_host		= '*localhost*';
+$db_user		= '*root*';
+$db_pass		= '**';
+$db_database	= 'inventory'; 
+
+
+Jshop\pages\autosuggestname.php
+แก้ ตรง บรรทัดที่ 2   $db = new mysqli('*localhost*', '*root*' ,'* *', 'inventory');
+ แก้ตรงในดอกจันทร์ ลบดอกจันทร์ออกด้วยหลังแก้ครับ    แก้ host , user , pass  ให้เป็น  host , user , pass ของฐานข้อมูลใหม่ไปใส่ //แก้ตรงในดอกจันทร์ ลบดอกจันทร์ออกด้วยหลังแก้ครับ 
+
+รหัสผ่านการเข้าใช้งาน
+admin
+user: admin
+pass: admin123
+
+ในส่วน Cashier (ปิดการใช้เนื่องจาก ย้ายมาที่ แอดมินคนเดียวทำทุกอย่างทั้งหมด)
+
